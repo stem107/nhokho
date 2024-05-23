@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nho khô</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="login">
+      <h1>Raisin</h1>
+
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}" method="post" class="row">
+          <input
+            type="text"
+            name="Area"
+            placeholder="Area"
+            required="required"
+          />
+          <input
+            type="text"
+            name="MajorAxisLength"
+            placeholder="MajorAxisLength"
+            required="required"
+          />
+          <input
+            type="text"
+            name="MinorAxisLength"
+            placeholder="MinorAxisLength"
+            required="required"
+          />
+          <input
+            type="text"
+            name="Eccentricity"
+            placeholder="Eccentricity"
+            required="required"
+          />
+
+          <input
+            type="text"
+            name="ConvexArea"
+            placeholder="ConvexArea"
+            required="required"
+          />
+          <input
+            type="text"
+            name="Extent"
+            placeholder="Extent"
+            required="required"
+          />
+          <input
+            type="text"
+            name="Perimeter"
+            placeholder="Perimeter"
+            required="required"
+          />
+
+        <div class="button-container">
+          <button type="submit" class="btn">Predict</button>
+        </div>
+      </form>
+
+      <br />
+      <br />
+      <h3 style="color: #0000FF">{{ prediction_text }}</h3>
+    </div>
+  </body>
+</html>

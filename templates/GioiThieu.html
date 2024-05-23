@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu - NHÓM 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Hind:300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='GioiThieu.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='loGo.png') }}" alt="Logo" />
+                <div class="logo-text">
+                    <h1>NHÓM 2</h1>
+                    <p>KHAI PHÁ DỮ LIỆU</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">TRANG CHỦ</a></li>
+                    <li><a href="{{ url_for('Gioi_Thieu') }}">GIỚI THIỆU</a></li>
+                </ul>
+            </nav>
+
+            <div class="login">
+                <a href="{{ url_for('login') }}">Đăng nhập</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Lời Cảm Ơn Kết Thúc Môn Học Khai Phá Dữ Liệu</h1>
+        <p>Kính thưa cô Huỳnh Lê Uyên Minh và các bạn,</p>
+        <p>Tôi xin dành những lời tri ân chân thành nhất tới cô Huỳnh Lê Uyên Minh, người đã dành tâm huyết và kiến thức sâu rộng để hướng dẫn chúng tôi qua môn học Khai Phá Dữ Liệu.</p>
+        <p>Qua những buổi giảng, cô không chỉ truyền đạt kiến thức một cách chuyên sâu mà còn truyền cảm hứng và sự đam mê về lĩnh vực này cho chúng tôi. Bằng sự kiên nhẫn và sự hỗ trợ của cô, chúng tôi đã có cơ hội khám phá và hiểu biết sâu hơn về tầm quan trọng của dữ liệu trong thế giới hiện đại.</p>
+        <p>Những bài học và kiến thức mà chúng tôi đã học được từ cô không chỉ là kiến thức lý thuyết mà còn là kinh nghiệm thực tiễn, giúp chúng tôi chuẩn bị cho sự nghiệp và hành trình khám phá dữ liệu trong tương lai.</p>
+        <p>Một lần nữa, tôi xin chân thành cảm ơn cô Huỳnh Lê Uyên Minh và cả các bạn học viên đã đồng hành cùng chúng tôi trong hành trình này. Chúc cô và tất cả mọi người luôn thành công và mãi mãi đam mê với việc khám phá dữ liệu.</p>
+        <p>Trân trọng,</p>
+        <p>[NHÓM 2]</p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>BÁO CÁO MÔN KHAI PHÁ DỮ LIỆU</h3>
+                <hr />
+                <p>Giảng Viên Hướng Dẫn: Huỳnh Lê Uyên Minh</p>
+            </div>
+            <div>
+                <h3>SINH VIÊN THỰC HIỆN</h3>
+                <hr />
+                <p>0022440341 - Lê Quốc Nhẫn</p>
+                <p>002270049 - Trần Đăng Khoa</p>
+                <p>0022460176 - Phan Duy Quý</p>
+                <p>0022440340 - Nguyễn Xuân Huy</p>
+            </div>
+            <div style="display: flex; align-items: center">
+                <img src="{{ url_for('static', filename='Facebook.png') }}" alt="Facebook" style="width: 40px; height: 40px" />
+                <img src="{{ url_for('static', filename='G+.png') }}" alt="Google Plus" style="width: 40px; height: 40px; margin-left: 10px" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NHÓM 2</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arimo"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='TrangChu.css') }}">
+</head>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='loGo.png') }}" alt="Logo" />
+          <div class="logo-text">
+            <h1>NHÓM 2</h1>
+            <p>KHAI PHÁ DỮ LIỆU</p>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('home') }}">TRANG CHỦ</a></li>
+            <li><a href="{{ url_for('Gioi_Thieu') }}">GIỚI THIỆU</a></li>
+          </ul>
+        </nav>
+
+        <div class="login">
+          <a href="{{ url_for('login') }}">Đăng nhập</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="form">
+      <h1>Raisin</h1>
+
+      <!-- Main Input For Receiving Query to our ML -->
+      <form action="{{ url_for('predict')}}" method="post">
+        <input type="text" name="Area" placeholder="Area" required="required" />
+        <br />
+        <input
+          type="text"
+          name="MajorAxisLength"
+          placeholder="MajorAxisLength"
+          required="required"
+        />
+        <br />
+        <input
+          type="text"
+          name="MinorAxisLength"
+          placeholder="MinorAxisLength"
+          required="required"
+        />
+        <br />
+        <input
+          type="text"
+          name="Eccentricity"
+          placeholder="Eccentricity"
+          required="required"
+        />
+        <br />
+        <input
+          type="text"
+          name="ConvexArea"
+          placeholder="ConvexArea"
+          required="required"
+        />
+        <br />
+        <input
+          type="text"
+          name="Extent"
+          placeholder="Extent"
+          required="required"
+        />
+        <br />
+        <input
+          type="text"
+          name="Perimeter"
+          placeholder="Perimeter"
+          required="required"
+        />
+
+        <div class="button-container">
+          <button type="submit" class="btn">Predict</button>
+        </div>
+      </form>
+
+      <br />
+      <h3 style="color: black; text-align: center">{{ prediction_text }}</h3>
+    </div>
+    <br />
+    <br />
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <h3>BÁO CÁO MÔN KHAI PHÁ DỮ LIỆU</h3>
+          <hr />
+
+          <p>
+            Giảng Viên Hướng Dẫn: Huỳnh Lê Uyên Minh
+        </div>
+        <div>
+          <h3>Sinh Viên Thực Hiện</h3>
+          <hr />
+          <p>0022440341 - Lê Quốc Nhẫn</p>
+          <p>002270049 - Trần Đăng Khoa</p>
+          <p>0022460176 - Phan Duy Quý</p>
+          <p>0022440340 - Nguyễn Xuân Huy</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img
+            src="{{ url_for('static', filename='Facebook.png') }}"
+            alt="Facebook"
+            style="width: 40px; height: 40px"
+          />
+          <img
+            src="{{ url_for('static', filename='G+.png') }}"
+            alt="Facebook"
+            style="width: 40px; height: 40px; margin-left: 10px"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.login-form, .register-form {
+    width: 400px;
+    margin: 10% auto;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* Thêm padding vào bên trong khung nhập liệu */
+}
+
+
+.login-form h1, .register-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0072bc;
+}
+
+.login-form input, .register-form input {
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 13px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-form .btn, .register-form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form .btn:hover, .register-form .btn:hover {
+    background-color: #0056b3;
+}
+
+.login-form p, .register-form p {
+    text-align: center;
+    margin-top: 10px;
+}

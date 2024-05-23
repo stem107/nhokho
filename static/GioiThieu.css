@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+    /* Giảm padding để header nhỏ hơn */
+    border-bottom: 5px solid #0072bc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    /* Giảm kích thước logo */
+    height: auto;
+    margin-right: 10px;
+    /* Giảm khoảng cách giữa logo và văn bản */
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 20px;
+    /* Giảm kích thước chữ của NHÓM 5 */
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: #391785;
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: 12px;
+    /* Giảm kích thước chữ của dòng dưới */
+    color: #0072bc;
+}
+
+nav {
+    background-color: #0072bc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Canh giữa các mục */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    /* Giảm khoảng cách giữa các mục */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    /* Giảm kích thước chữ */
+    padding: 10px 15px;
+    /* Giảm padding để mục nhỏ hơn */
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #005a9e;
+}
+
+.login {
+    text-align: right;
+    padding: 10px 20px;
+}
+
+.login a {
+    color: #0072bc;
+    text-decoration: none;
+    font-size: 16px;
+    /* Giảm kích thước chữ */
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+
+
+.btn {
+    position: -ms-page;
+    background-color: #0072bc;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.button-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form {
+    position: relative;
+    width: 80%;
+    /* Giảm độ rộng của form */
+    margin: auto;
+
+}
+
+.form h1 {
+    color: #391785;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+input {
+    display: block;
+    width: 50%;
+    margin: auto;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    background-color: #0072bc;
+    color: white;
+    padding: 10px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start;
+    /* hoặc 'center' */
+    gap: 180px;
+    /* Điều chỉnh khoảng cách giữa các cột */
+    padding-left: 80px;
+    padding-bottom: 10px;
+    /* Thêm padding vào bên trong footer */
+}

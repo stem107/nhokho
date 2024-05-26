@@ -5,7 +5,6 @@ import pickle
 
 # Đọc dữ liệu từ file CSV
 data = pd.read_csv('Raisin.csv')
-
 # Chuyển đổi nhãn lớp từ dạng chuỗi sang số nguyên
 data['Class'], class_names = pd.factorize(data['Class'])
 
